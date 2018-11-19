@@ -517,6 +517,11 @@ void setup() {
   // one wants to use these layers, just set the default layer to one in EEPROM,
   // by using the `settings.defaultLayer` Focus command.
   EEPROMKeymap.setup(5, EEPROMKeymap.Mode::EXTEND);
+
+  MouseKeys.speed = 25;
+  MouseKeys.speedDelay = 0;
+  MouseKeys.accelSpeed = 0;
+  MouseKeys.accelDelay = 50;
 }
 
 /** loop is the second of the standard Arduino sketch functions.
