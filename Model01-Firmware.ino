@@ -557,6 +557,11 @@ void setup() {
   // maps for. To make things simple, we set it to five layers, which is how
   // many editable layers we have (see above).
   ColormapEffect.max_layers(5);
+
+  MouseKeys.speed = 25;
+  MouseKeys.speedDelay = 0;
+  MouseKeys.accelSpeed = 0;
+  MouseKeys.accelDelay = 50;
 }
 
 /** loop is the second of the standard Arduino sketch functions.
